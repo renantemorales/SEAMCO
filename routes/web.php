@@ -46,3 +46,7 @@ Route::get('/seamco/seamco_member_login', function () {
 Route::get('/seamco/seamco_admin_login', function () {
     return view('seamco.seamco_admin_login');
 });
+
+Route::get('/seamco/seamco_member_loginv14', function () {
+    return view('seamco.seamco_member_loginv14');
+});

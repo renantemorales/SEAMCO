@@ -1,7 +1,7 @@
 @extends('seamco.header')
 @section('content')   
 
-   <section class="wpm_welcome_area">
+   <section class="wpm_member_area">
    
    	<div class="container">
         <br/><br/><br/><br/>
@@ -32,7 +32,7 @@
 
               <div class="col-sm-2">
                   
-                  <h1><a href="{!! url('/seamco/seamco_member_login'); !!}" style="text-decoration:none;color:#000000;">I HAVE AN ACCOUNT</a></h1>
+                  <h1><a href="{!! url('/seamco/seamco_member_loginv14'); !!}" style="text-decoration:none;color:#000000;">I HAVE AN ACCOUNT</a></h1>
               
               </div>
 

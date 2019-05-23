@@ -1,5 +1,5 @@
-@extends('seamco.header')
-@section('content')  
+
+  
    <!--  -->
    <br/><br/>
    <section class="wpm_title_ber">
