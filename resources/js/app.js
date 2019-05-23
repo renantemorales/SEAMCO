@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0b562bb6d63287f9ef67f9b806564a7b2602bf8e
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -17,8 +20,13 @@ window.Vue = require('vue');
  * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
  */
 
+<<<<<<< HEAD
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
+=======
+// const files = require.context('./', true, /\.vue$/i);
+// files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
+>>>>>>> 0b562bb6d63287f9ef67f9b806564a7b2602bf8e
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 
@@ -29,5 +37,9 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
  */
 
 const app = new Vue({
+<<<<<<< HEAD
     el: '#app'
+=======
+    el: '#app',
+>>>>>>> 0b562bb6d63287f9ef67f9b806564a7b2602bf8e
 });

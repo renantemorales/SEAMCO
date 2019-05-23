@@ -46,3 +46,36 @@ Route::post('password/reset', 'Auth\ResetPasswordController@reset')->name('passw
 Route::get('email/verify', 'Auth\VerificationController@show')->name('verification.notice');
 Route::get('email/verify/{id}', 'Auth\VerificationController@verify')->name('verification.verify');
 Route::get('email/resend', 'Auth\VerificationController@resend')->name('verification.resend');
+
+
+Route::get('/seamco', function () {
+    return view('seamco.seamco');
+});
+
+Route::get('/seamco', function () {
+    return view('seamco.index');
+});
+
+Route::get('/seamco/seamco_FAQs', function () {
+    return view('seamco.seamco_FAQs');
+});
+
+Route::get('/seamco/seamco_contact', function () {
+    return view('seamco.seamco_contact');
+});
+
+Route::get('/seamco/seamco_membership', function () {
+    return view('seamco.seamco_membership');
+});
+
+Route::get('/seamco/seamco_register', function () {
+    return view('seamco.seamco_register');
+});
+
+Route::get('/seamco/seamco_member_login', function () {
+    return view('seamco.seamco_member_login');
+});
+
+Route::get('/seamco/seamco_admin_login', function () {
+    return view('seamco.seamco_admin_login');
+});

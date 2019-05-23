@@ -4,7 +4,11 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<<<<<<< HEAD
         <title>SEAMCO</title>
+=======
+        <title>Laravel</title>
+>>>>>>> 0b562bb6d63287f9ef67f9b806564a7b2602bf8e
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
