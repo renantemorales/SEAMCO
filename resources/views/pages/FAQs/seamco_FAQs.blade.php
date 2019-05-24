@@ -1,5 +1,5 @@
-
-  
+@extends('layouts.header')
+@section('content')   
    <!--  -->
    <br/><br/>
    <section class="wpm_title_ber">
@@ -121,7 +121,7 @@
     </div>
   </section>
   <!--  -->
-@extends('seamco.footer')
+@extends('layouts.footer')
 
    
    

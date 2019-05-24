@@ -1,4 +1,4 @@
-@extends('seamco.header')
+@extends('layouts.header')
 @section('content')   
    <section class="wpm_slider_area" id="home-section">
 
@@ -20,7 +20,7 @@
                   <div class="carousel-caption">
                     <h1>Seafarers Mighty Credit Cooperative</h1><br>
                       <div class="container-login100-form-btn">
-                        <a href="{!! url('/seamco/seamco_membership'); !!}" class="login100-form-btn" name="login">Join us now</a>
+                        <a href="{!! url('/pages/Membership/seamco_membership'); !!}" class="login100-form-btn" name="login">Join us now</a>
                       </div>
                     
                   </div>
@@ -33,7 +33,7 @@
                   <div class="carousel-caption">
                     <h1>Seafarers Mighty Credit Cooperative</h1><br>
                       <div class="container-login100-form-btn">
-                        <a href="{!! url('/seamco/seamco_membership'); !!}" class="login100-form-btn" name="login">Join us now</a>
+                        <a href="{!! url('/pages/Membership/seamco_membership'); !!}" class="login100-form-btn" name="login">Join us now</a>
                       </div>
                     
                   </div>
@@ -46,7 +46,7 @@
                   <div class="carousel-caption">
                     <h1>Seafarers Mighty Credit Cooperative</h1><br>
                       <div class="container-login100-form-btn">
-                        <a href="{!! url('/seamco/seamco_membership'); !!}" class="login100-form-btn" name="login">Join us now</a>
+                        <a href="{!! url('/pages/Membership/seamco_membership'); !!}" class="login100-form-btn" name="login">Join us now</a>
                       </div>
                     
                   </div>
@@ -217,7 +217,7 @@
                   
                   <li class="list-group-item">
                       <div class="container-login100-form-btn">
-                        <a href="{!! url('/seamco/seamco_membership'); !!}" class="login100-form-btn" name="login">Join us now</a>
+                        <a href="{!! url('/pages/Membership/seamco_membership'); !!}" class="login100-form-btn" name="login">Join us now</a>
                       </div>
                   </li>
                 </ul>
@@ -284,7 +284,7 @@
                   <h2 class="text-center">Join Us Today and Take Control of Your Future!</h2>
                 </div>
                 <div class="text-center">
-                  <a href="{!! url('/seamco/seamco_membership'); !!}" class="btn btn-primary" style="background-color:#2ACCC0;"><h1>REGISTER NOW</h1></a>
+                  <a href="{!! url('/pages/Membership/seamco_membership'); !!}" class="btn btn-primary" style="background-color:#2ACCC0;"><h1>REGISTER NOW</h1></a>
                 </div>
             </div>
         </div>
@@ -430,7 +430,7 @@
    
    </section>
    
-@extends('seamco.footer')
+@extends('layouts.footer')
 
    
    

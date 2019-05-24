@@ -1,4 +1,4 @@
-@extends('seamco.header')
+@extends('layouts.header')
 @section('content')   
 
    <section class="wpm_member_area">
@@ -26,19 +26,19 @@
 
               <div class="col-sm-2">
                   
-                  <h1><a href="{!! url('/seamco/seamco_register'); !!}" style="text-decoration:none;color:#000000;">CREATE AN ACCOUNT</a></h1>
+                  <h1><a href="{!! url('/pages/Register/seamco_register'); !!}" style="text-decoration:none;color:#000000;">CREATE AN ACCOUNT</a></h1>
               
               </div>
 
               <div class="col-sm-2">
                   
-                  <h1><a href="{!! url('/seamco/seamco_member_loginv14'); !!}" style="text-decoration:none;color:#000000;">I HAVE AN ACCOUNT</a></h1>
+                  <h1><a href="{!! url('/pages/Login/seamco_member_loginv14'); !!}" style="text-decoration:none;color:#000000;">I HAVE AN ACCOUNT</a></h1>
               
               </div>
 
               <div class="col-sm-2">
                   
-                  <h1><a href="{!! url('/seamco/seamco_admin_login'); !!}" style="text-decoration:none;color:#000000;">I AM AN AMDIN</a></h1>
+                  <h1><a href="{!! url('/pages/Login/seamco_admin_login'); !!}" style="text-decoration:none;color:#000000;">I AM AN AMDIN</a></h1>
               
               </div>
 
@@ -109,7 +109,7 @@
       </div>
   </section>
 
-@extends('seamco.footer')
+@extends('layouts.footer')
 
    
    

@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+
+=======
+>>>>>>> 0b562bb6d63287f9ef67f9b806564a7b2602bf8e
 window._ = require('lodash');
 
 /**

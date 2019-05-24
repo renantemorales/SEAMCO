@@ -244,7 +244,7 @@
     	 <div class="container"> 
           <div class="row">
               <div class="col-sm-2"  data-uk-scrollspy="{cls:'uk-animation-slide-left', repeat: true}">
-                <a href="{!! url('/seamco/'); !!}"><img class="wpm_logo" src="{{ asset('/images/logo/final.png') }}" alt=""></a>
+                <a href="{!! url('/pages/Index/'); !!}"><img class="wpm_logo" src="{{ asset('/images/logo/final.png') }}" alt=""></a>
               </div>
               
               <div class="col-sm-9">
@@ -263,23 +263,23 @@
 
                         <ul class="nav navbar-nav navbar-right wpm_menu"> 
                         
-                          <li><a href="{!! url('/seamco/'); !!}#home-section">Home</a></li>
+                          <li><a href="{!! url('/pages/Index/'); !!}#home-section">Home</a></li>
                           
-                          <li><a href="{!! url('/seamco/'); !!}#about-section" class="nav-link">Our Goals</a></li>
+                          <li><a href="{!! url('/pages/Index/'); !!}#about-section" class="nav-link">Our Goals</a></li>
 
                           <li class = "dropdown">
-                            <a href="{!! url('/seamco/'); !!}#about-section" class = "dropbtn">About us</a>
+                            <a href="{!! url('/pages/Index/'); !!}#about-section" class = "dropbtn">About us</a>
                             <ul class = "dropdown-content">
-                                <li><a href="{!! url('/seamco/'); !!}#purpose-section">Our Purpose</a></li>
-                                <li><a href="{!! url('/seamco/'); !!}#mission-section">Our Mission</a></li>
-                                <li><a href="{!! url('/seamco/'); !!}#vision-section">Our Vision</a></li>
-                                <li><a href="{!! url('/seamco/'); !!}#gallery-section">Gallery</a></li>
+                                <li><a href="{!! url('/pages/Index/'); !!}#purpose-section">Our Purpose</a></li>
+                                <li><a href="{!! url('/pages/Index/'); !!}#mission-section">Our Mission</a></li>
+                                <li><a href="{!! url('/pages/Index/'); !!}#vision-section">Our Vision</a></li>
+                                <li><a href="{!! url('/pages/Index/'); !!}#gallery-section">Gallery</a></li>
                             </ul>
                           </li>
 
-                          <li><a href="{!! url('/seamco/'); !!}#about-section">Featured</a></li>
+                          <li><a href="{!! url('/pages/Index/'); !!}#about-section">Featured</a></li>
                           <li class = "dropdown">
-                            <a href="{!! url('/seamco/'); !!}#about-section" class = "dropbtn">Services</a>
+                            <a href="{!! url('/pages/Index/'); !!}#about-section" class = "dropbtn">Services</a>
                             <ul class = "dropdown-content">
                                 <a href="#">Regular Loan</a>
                                 <a href="#">Business Loan</a>
@@ -288,8 +288,8 @@
                             </ul>
                           </li>
 
-                          <li><a href="{!! url('/seamco/seamco_FAQs'); !!}">FAQs</a> </li>
-                          <li><a href="{!! url('/seamco/seamco_contact'); !!}">Contact us</a></li>
+                          <li><a href="{!! url('/pages/FAQs/seamco_FAQs'); !!}">FAQs</a> </li>
+                          <li><a href="{!! url('/pages/Contact/seamco_contact'); !!}">Contact us</a></li>
                           
                         </ul>
                       </div>

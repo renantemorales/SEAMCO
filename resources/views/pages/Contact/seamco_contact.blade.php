@@ -1,4 +1,4 @@
-@extends('seamco.header')
+@extends('layouts.header')
 @section('content')   
     <!--  -->
     <br/><br/>
@@ -110,7 +110,7 @@
 
     </section>
    
-@extends('seamco.footer')
+@extends('layouts.footer')
 
    
    
