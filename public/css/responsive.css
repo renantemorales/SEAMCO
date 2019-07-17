@@ -1,0 +1,56 @@
+
+/* Tablet Layout: 768px. */
+
+@media (max-width: 768px), only screen and (max-device-width: 768px) {
+.wpm_mobile_center{  float:none; text-align:center; }
+.wpm_header{ min-height:80px;  }
+.wpm_menu li a{ padding:10px 10px; margin-top:15px; }
+.navbar-toggle{ margin-top:0px; margin-bottom:5px; margin-right:0px; }
+.wpm_logo{ padding-top: 20px; margin:0 auto;}
+.open .dropdown-menu>li>a:hover{ background:rgba(0, 0, 0, 0.5) !important; color:#FFF !important;}
+.navbar-nav .open .dropdown-menu>li>a{ color:#FFF !important; background: #2B3F46; text-align:center;}
+.wpm_navber{ background:none; margin-bottom:0px; margin-top:0px;}
+.navbar-default .navbar-toggle{ float:none;}
+.navbar-header{ text-align:center;}
+.navbar-default .navbar-nav>li>a{ text-align:center;}
+
+
+
+.wpm_popup_area a i{ margin-top:10px; margin-bottom:20px;}
+  
+                    
+
+.carousel-control .glyphicon-chevron-right{ top:45%;}
+.carousel-control .glyphicon-chevron-left{ top:45%;}
+
+
+.wpm_about_area .col-sm-6{
+	margin-bottom:30px;}
+.wpm_about_area{
+	padding-bottom:70px;}	
+
+
+}
+
+
+
+@media (max-width: 480px), only screen and (max-device-width: 480px) {
+
+.carousel-control .glyphicon-chevron-right{ font-size:18px;}
+.carousel-control .glyphicon-chevron-left{ font-size:18px;}
+.wpm_slider_area h1{ margin-bottom:30px; font-size:18px;}
+
+
+}
+
+
+@media (max-width: 320px), only screen and (max-device-width: 320px) {
+	
+	
+.wpm_portfolio_area .container{ padding-right: 0px; padding-left: 0px; }	
+
+.carousel-indicators{ display:none;}
+.wpm_slider_area h1{margin-bottom: -12px; font-size:10px;}
+
+
+}
