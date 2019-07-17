@@ -34,12 +34,12 @@
             <div class="col-sm-12">
                 @if(!empty($message))
                         <div class="col-md-12">
-                          <div class="box box-success">
+                          <div class="box">
                             <div class="box-header with-border">
                               <h3 class="box-title">Successfully sent</h3>
 
                               <div class="box-tools pull-right">
-                                <button type="button" class="btn btn-box-tool" style="background-color:	green;" data-widget="remove"><i class="fa fa-times"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
                               </div>
                               <!-- /.box-tools -->
                             </div>
@@ -107,9 +107,9 @@
           <!--  -->
           <div class="row">
                 
-              <div class="col-sm-6" style="background-color: #333; color: #ffffff;">
+              <div class="col-sm-6" style="border-style: dashed; padding: 5px;">
                 
-                  <h3 style="color:white;">FOR COMMENTS AND SUGGESTIONS:</h3>
+                  <h3>FOR COMMENTS AND SUGGESTIONS:</h3>
                     
                     <form action="{{ route('message.save') }}" method="POST">
                         @csrf
