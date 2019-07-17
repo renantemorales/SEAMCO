@@ -25,7 +25,7 @@ use App\Http\Controllers\Controller;
 class ClientRegistration extends Controller
 {
     public function index() {
-// Test
+
         session()->forget('applicantID');
 
         $Recruiters = Recruiter::orderBy('LName', 'asc')->get();
