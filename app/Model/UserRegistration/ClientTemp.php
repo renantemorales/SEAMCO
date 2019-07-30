@@ -27,6 +27,7 @@ class ClientTemp extends Model
         'CivilStatus',
         'TINNum', 
         'Geographical', 
+        'ResTelNum', 
         'CellNum', 
         'OtherContactNum', 
         'EmailAddress', 

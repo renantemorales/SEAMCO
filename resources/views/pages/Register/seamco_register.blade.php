@@ -338,7 +338,7 @@ input {
                   
                   <div class="row">
                     <div class="col-xs-6">
-                      <label>Company other source of income</label>
+                      <label>Other source of income</label>
                       <input type="text" name="BusOtherSourceOfIncome" class="form-control" placeholder="Ex. Sari-sari store">
                     </div>
                     
@@ -346,10 +346,9 @@ input {
                       <label>Email Address</label>
                       <input type="text" name="EmailAddress" class="form-control" placeholder="Ex. juandelacruz@gmail.com" required>
                     </div>
-                  </div>
+                  </div><br/>
                   
                   <div class="row">
-                    <br/>
                     <!-- <div class="col-xs-6">
                       <label>Recruiter Name</label>
                       
@@ -361,12 +360,17 @@ input {
                     </div> -->
 
                     <div class="col-xs-6">
-                      <div class="form-group">
                         <label>Recruiter Name</label>
+                      <div class="form-group">
                           <div class="autocomplete">
                             <input id="myInput" type="text" name="myCountry" class="form-control" placeholder="Ex. Dela Cruz, Juan">
                           </div>
                       </div>
+                    </div>
+
+                    <div class="col-xs-6">
+                      <label><i style="font-size:10px;">Facebook/Messenger Username(optional)</i></label>
+                      <input type="text" name="SocialMediaAct" class="form-control" placeholder="Ex. fb.com/JuanDLCruz or Juan DL Cruz" required>
                     </div>
 
                   </div><br/><br/>

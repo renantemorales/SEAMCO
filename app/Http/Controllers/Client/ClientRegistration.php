@@ -13,6 +13,7 @@ use App\Model\Client\Client;
 use App\Model\Recruiter\Recruiter;
 use App\Model\Geo\Geo;
 use App\Model\ClientTempID\ClientTempID;
+use App\Model\Member\Member;
 use Exception;
 use DB;
 
@@ -53,6 +54,7 @@ class ClientRegistration extends Controller
         $civilStatuses = CivilStatus::orderBy('CivilStatID', 'asc')->get();
         $mailingAddresses = MailingAddress::orderBy('MailingAddressID', 'asc')->get();
         $geos = Geo::orderBy('GeoDesc', 'asc')->get();
+        $members = Member::where('branch_id','!=', 1)->get()->pluck('email')->toArray();
         
         $AccountType = 1;
         $ClientType = 1;
@@ -63,7 +65,6 @@ class ClientRegistration extends Controller
         $ClientTempIDLast =  ClientTempID::get()->last();
         $NewClientIDLast =  Recruiter::get()->last();
         $DateOpened = date('Y-m-d H:i:s');
-        //dd($DateOpened);
 
         if(is_null($NewClientIDLast))
         {
@@ -109,6 +110,7 @@ class ClientRegistration extends Controller
         if($request->input('MName') == ''){ $MName = " "; }else{ $MName = $request->input('MName'); }
         if($request->input('SName') == ''){ $SName = " "; }else{ $SName = $request->input('SName'); }
         if($request->input('OtherContactNum') == ''){ $OtherContactNum = " "; }else{ $OtherContactNum = $request->input('OtherContactNum'); }
+        if($request->input('SocialMediaAct') == ''){ $SocialMediaAct = " "; }else{ $SocialMediaAct = $request->input('SocialMediaAct'); }
         if($request->input('BusOtherSourceOfIncome') == ''){ $BusOtherSourceOfIncome = " "; }else{ $BusOtherSourceOfIncome = $request->input('BusOtherSourceOfIncome'); }
 
         DB::beginTransaction();
@@ -129,8 +131,9 @@ class ClientRegistration extends Controller
             $ClientTemp->CivilStatus = $request->input('CivilStatDesc');
             $ClientTemp->TINNum = $request->input('TINNum'); 
             $ClientTemp->Geographical = $request->input('GeoDesc'); 
+            $ClientTemp->ResTelNum = $OtherContactNum;
             $ClientTemp->CellNum = $request->input('CellNum'); 
-            $ClientTemp->OtherContactNum = $OtherContactNum; 
+            $ClientTemp->OtherContactNum = $SocialMediaAct; 
             $ClientTemp->EmailAddress = $request->input('EmailAddress'); 
             $ClientTemp->MailingAddress = $request->input('MailingAddressDesc'); 
             $ClientTemp->ResAddStreet = $request->input('ResAddStreet'); 
@@ -147,16 +150,15 @@ class ClientRegistration extends Controller
             $ClientTemp->save();
 
             session(['applicantID'=>$FinalClientID]);
-
-            //dd('applicantID', session('applicantID'));
            
             $applicantID = $FinalClientID;
 
-            $email = 'renantemorales@coredev.ph';
-
-            $mail = Mail::to($email)
-            ->send(new RegisteredApplicant(env('APP_URL') . ':8000/$applicantID/vote/verify?email=' . $email));
-
+            foreach($members as $member) {
+                $email = $member;
+                $mail = Mail::to($email)->cc('botyoktorniado@gmail.com')
+                    ->send(new RegisteredApplicant(env('APP_URL') . ':8000/$applicantID/vote/verify?email=' . $email));
+            }
+            
             //return $ClientTemp;
                     
         } catch(Exception $e) {

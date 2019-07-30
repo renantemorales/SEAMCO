@@ -394,25 +394,7 @@
         
         	<div class="row">
             
-            	<div class="col-sm-4" data-uk-scrollspy="{cls:'uk-animation-scale-up', repeat: true}">
-                
-                	<img src="{{url('images/seamco/large_ad.png')}}">
-                
-                </div>
-                
-                <div class="col-sm-4" data-uk-scrollspy="{cls:'uk-animation-scale-up', repeat: true}">
-                
-                  <img src="{{url('images/seamco/large_ad.png')}}">
-                
-                </div>
-                
-                <div class="col-sm-4" data-uk-scrollspy="{cls:'uk-animation-scale-up', repeat: true}">
-                
-                  <img src="{{url('images/seamco/large_ad.png')}}">
-                
-                </div>
-            
-            </div>
+          </div>
         
         </div>
    
