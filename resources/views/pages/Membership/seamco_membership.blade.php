@@ -33,13 +33,13 @@
 
               <div class="col-sm-2">
                   
-                  <h1><a href="http://localhost:8000/login" style="text-decoration:none;color:#000000;">I HAVE AN ACCOUNT</a></h1>
+                  <h1><a href="http://52.221.234.223/login" style="text-decoration:none;color:#000000;">I HAVE AN ACCOUNT</a></h1>
               
               </div>
 
               <div class="col-sm-2">
                   
-                  <h1><a href="http://localhost:8000/admin/login" style="text-decoration:none;color:#000000;">I AM AN AMDIN</a></h1>
+                  <h1><a href="http://52.221.234.223/admin/login" style="text-decoration:none;color:#000000;">I AM AN AMDIN</a></h1>
               
               </div>
 

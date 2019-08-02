@@ -33,6 +33,6 @@ class RegisteredApplicant extends Mailable
         //dd($applicantID);
 
         return $this->markdown('emails.registeredapplicant')
-            ->with(['link' => 'http://localhost:8000/admin/applicants/'.$applicantID.'/vote']);
+            ->with(['link' => 'http://52.221.234.223/admin/applicants/'.$applicantID.'/vote']);
     }
 }
